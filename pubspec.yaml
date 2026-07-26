@@ -1,0 +1,81 @@
+name: forex_alert
+description: A Flutter mobile application for real-time forex price alerts and trading notifications.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase packages
+  firebase_core: ^2.24.0
+  firebase_messaging: ^14.6.0
+  cloud_firestore: ^4.13.0
+  firebase_analytics: ^10.7.0
+
+  # State management
+  provider: ^6.0.0
+  get: ^4.6.5
+
+  # HTTP client
+  dio: ^5.3.1
+  http: ^1.1.0
+
+  # Local storage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+
+  # UI packages
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.7
+  intl: ^0.19.0
+
+  # Device info
+  device_info_plus: ^9.1.1
+  package_info_plus: ^5.0.1
+
+  # Notifications
+  flutter_local_notifications: ^16.2.0
+
+  # Charts and graphs
+  fl_chart: ^0.63.0
+
+  # Utility packages
+  uuid: ^4.0.0
+  connectivity_plus: ^5.0.2
+  logger: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_linter: ^3.0.0
+  mockito: ^5.4.2
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
